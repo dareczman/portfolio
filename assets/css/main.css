@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+    --font-sans: "Montserrat", sans-serif;
+    /*--color-primary: #003e29;*/
+    /*--color-secondary: #9c0000;*/
+    /*--text-color-default: #000;*/
+    /*--text-color-secondary: #fff;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.animated-bg {
+    animation: bgColorCycle 2s infinite alternate;
+    background-color: var(--color-primary);
+}
+
+@keyframes bgColorCycle {
+    0% {
+        background-color: var(--color-primary);
+    }
+    100% {
+        background-color: var(--color-secondary);
+    }
+}
