@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-29',
   devtools: { enabled: true },
   app: {
+    baseURL: '/portfolio/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
@@ -12,7 +13,6 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
-    baseURL: '/portfolio/',
   },
   i18n: {
     vueI18n: '~/locales/i18n.config.ts',
