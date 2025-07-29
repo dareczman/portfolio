@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
+    baseURL: '/portfolio/',
   },
   i18n: {
     vueI18n: '~/locales/i18n.config.ts',
@@ -23,4 +24,8 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/ui', '@nuxt/image', '@nuxtjs/i18n', '@pinia/nuxt'],
   css: ['~/assets/css/main.css'],
+  ssr: true,
+  nitro: {
+    preset: 'github_pages',
+  },
 });
