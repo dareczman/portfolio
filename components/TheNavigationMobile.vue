@@ -1,23 +1,4 @@
 <template>
-  <!--  <UPopover-->
-  <!--    v-model:open="isOpen"-->
-  <!--    :content="{-->
-  <!--      align: 'center',-->
-  <!--      side: 'bottom',-->
-  <!--      sideOffset: 8,-->
-  <!--    }"-->
-  <!--    arrow-->
-  <!--  >-->
-  <!--    <UButton color="neutral" variant="subtle">-->
-  <!--      <UIcon name="solar-hamburger-menu-linear" class="size-10" />-->
-  <!--    </UButton>-->
-
-  <!--    <template #content>-->
-  <!--      <Placeholder class="p-5 inline-flex">-->
-  <!--        <TheNavigation :is-vertical="true" @on-close="onClose" />-->
-  <!--      </Placeholder>-->
-  <!--    </template>-->
-  <!--  </UPopover>-->
   <div class="menu-mobile-section relative">
     <div ref="toggleBtn">
       <UButton color="neutral" variant="subtle" @click="onToggle">
@@ -27,7 +8,7 @@
 
     <Transition>
       <div
-        v-if="!isOpen"
+        v-if="isOpen"
         class="mobile-menu shadow-md border border-gray-200 rounded-sm"
         :style="{ top: hamburgerIconHeightCalculate + 'px' }"
       >
@@ -41,19 +22,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, useTemplateRef, computed } from 'vue';
+import { useTemplateRef, computed } from 'vue';
 import { useElementSize } from '@vueuse/core';
-
-const isOpen = ref(false);
+import { storeToRefs } from 'pinia';
+import { useNavigationStore } from '~/stores/navigation';
 
 const el = useTemplateRef('toggleBtn');
 const { height } = useElementSize(el);
 
 const hamburgerIconHeightCalculate = computed(() => height.value + 8); // 8 is an arrow height
 
-const onToggle = () => {
-  isOpen.value = !isOpen.value;
-};
+const navigationStore = useNavigationStore();
+const { isOpen } = storeToRefs(navigationStore);
+const onToggle = navigationStore.onToggle;
 </script>
 
 <style scoped>
@@ -61,6 +42,7 @@ const onToggle = () => {
   position: absolute;
   background: #fff;
   right: 0;
+  z-index: 10;
 }
 
 .arrow {
