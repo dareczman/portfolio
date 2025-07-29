@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isOpen" class="fixed w-full h-full" @click="onToggle" />
+  <div v-if="isOpen" class="fixed w-full h-full z-1" @click="onToggle" />
 </template>
 
 <script setup lang="ts">

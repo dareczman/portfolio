@@ -1,5 +1,5 @@
 <template>
-  <header ref="headerRef" class="pt-5 pb-5 shadow-md fixed w-full bg-white dark:text-black">
+  <header ref="headerRef" class="pt-5 pb-5 shadow-md fixed w-full bg-white dark:text-black z-1">
     <UContainer class="flex items-center justify-between gap-1 md:gap-2">
       <strong class="text-primary">Dariusz Kaczmarek</strong>
 
