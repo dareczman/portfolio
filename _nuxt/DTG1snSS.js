@@ -1,1 +1,0 @@
-import{cT as r,bV as o,v as s}from"./PI92ohyw.js";import{b as m}from"./AX7bp6g1.js";const c=r("header",()=>{const e=o("headerRef"),{height:t}=m(e),a=s(()=>t.value+40);return{headerElement:e,headerHeightCalculate:a}});export{c as u};
