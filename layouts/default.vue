@@ -2,6 +2,7 @@
   <TheLoadingPage v-if="!isAllImagesLoaded" />
 
   <div v-else>
+    <TheOverlay />
     <TheHeader />
 
     <main>
@@ -17,6 +18,7 @@ import TheHeader from '~/components/TheHeader.vue';
 import TheFooter from '~/components/TheFooter.vue';
 import TheLoadingPage from '../components/TheLoadingPage.vue';
 import { onMounted, ref } from 'vue';
+import TheOverlay from '~/components/TheOverlay.vue';
 
 const isAllImagesLoaded = ref(false);
 

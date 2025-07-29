@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -17,6 +17,7 @@
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui": "^3.1.2",
     "@nuxtjs/i18n": "^9.5.4",
+    "@pinia/nuxt": "^0.11.2",
     "emailjs-com": "^3.2.0",
     "nuxt": "^3.17.4",
     "typescript": "^5.8.3",

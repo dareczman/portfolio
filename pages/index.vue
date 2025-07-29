@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="{ paddingTop: headerHeightCalculate + 'px' }">
     <VisitingCard />
 
     <div id="about-me">
@@ -26,6 +26,11 @@ import AboutMe from '~/layouts/AboutMe.vue';
 import Experience from '~/layouts/Experience.vue';
 import Contact from '~/layouts/Contact.vue';
 import Goals from '~/layouts/Goals.vue';
+import { storeToRefs } from 'pinia';
+import { useHeaderStore } from '~/stores/header';
+
+const headerStore = useHeaderStore();
+const { headerHeightCalculate } = storeToRefs(headerStore);
 </script>
 
 <style scoped></style>
