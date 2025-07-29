@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-primary p-5 text-white">
+  <footer class="bg-primary p-5 text-white text-center">
     <UContainer class="flex items-center gap-10 justify-evenly">
       <p>{{ $t('footer') }}</p>
     </UContainer>
