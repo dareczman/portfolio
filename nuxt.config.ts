@@ -4,6 +4,7 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-29',
   devtools: { enabled: true },
+  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/ui', '@nuxtjs/i18n', '@pinia/nuxt'],
   app: {
     baseURL: '/portfolio/',
     head: {
@@ -22,7 +23,6 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
-  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/ui', '@nuxt/image', '@nuxtjs/i18n', '@pinia/nuxt'],
   css: ['~/assets/css/main.css'],
   ssr: true,
   nitro: {
