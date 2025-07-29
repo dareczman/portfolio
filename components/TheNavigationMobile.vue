@@ -9,7 +9,7 @@
     <Transition>
       <div
         v-if="isOpen"
-        class="mobile-menu shadow-md border border-gray-200 rounded-sm"
+        class="mobile-menu shadow-md border border-gray-200 rounded-sm z-50 absolute right-0 bg-white"
         :style="{ top: hamburgerIconHeightCalculate + 'px' }"
       >
         <div class="arrow absolute bottom-full right-2" />
@@ -27,8 +27,8 @@ import { useElementSize } from '@vueuse/core';
 import { storeToRefs } from 'pinia';
 import { useNavigationStore } from '~/stores/navigation';
 
-const el = useTemplateRef('toggleBtn');
-const { height } = useElementSize(el);
+const toggleBtnElement = useTemplateRef('toggleBtn');
+const { height } = useElementSize(toggleBtnElement);
 
 const hamburgerIconHeightCalculate = computed(() => height.value + 8); // 8 is an arrow height
 
@@ -38,13 +38,6 @@ const onToggle = navigationStore.onToggle;
 </script>
 
 <style scoped>
-.mobile-menu {
-  position: absolute;
-  background: #fff;
-  right: 0;
-  z-index: 10;
-}
-
 .arrow {
   width: 0;
   height: 0;
