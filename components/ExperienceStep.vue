@@ -1,17 +1,17 @@
 <template>
   <div class="experience-step pb-10">
     <div class="flex gap-2 items-center">
-      <NuxtImg src="/img/office-building.png" alt="office" width="24" />
+      <img src="/img/office-building.png" alt="office" width="24" />
       <strong class="text-lg">{{ companyName }}</strong>
     </div>
 
     <div class="flex gap-2 items-center">
-      <NuxtImg src="/img/worker.png" alt="worker" width="24" />
+      <img src="/img/worker.png" alt="worker" width="24" />
       <p class="text-lg">{{ position }}</p>
     </div>
 
     <div class="flex gap-2 items-center">
-      <NuxtImg src="/img/calendar.png" alt="worker" width="24" />
+      <img src="/img/calendar.png" alt="worker" width="24" />
       <p class="text-lg">{{ timeline }}</p>
     </div>
 

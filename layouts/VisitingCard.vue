@@ -2,7 +2,7 @@
   <div class="visiting-card-section pt-20 bg-primary text-white">
     <UContainer class="flex items-center gap-10 justify-evenly flex-col-reverse md:flex-row">
       <div>
-        <NuxtImg src="/img/avatar.png" alt="Dariusz Kaczmarek" class="photo" />
+        <img src="/img/avatar.png" alt="Dariusz Kaczmarek" class="photo" />
       </div>
 
       <div class="text-center md:text-left">
