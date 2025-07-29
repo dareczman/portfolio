@@ -19,7 +19,12 @@
 
     <div class="stack-section mt-10 flex gap-5 flex-wrap justify-center">
       <template v-for="stack in stacks" :key="stack">
-        <TechnologyIcon class="w-20" :alt="stack" :img-src="`/img/${stack}.png`" :name="stack" />
+        <TechnologyIcon
+          class="w-20"
+          :alt="stack"
+          :img-src="`${config.app.baseURL}/img/${stack}.png`"
+          :name="stack"
+        />
       </template>
     </div>
   </div>
@@ -37,6 +42,8 @@ interface Props {
 }
 
 defineProps<Props>();
+
+const config = useRuntimeConfig();
 </script>
 
 <style scoped></style>
