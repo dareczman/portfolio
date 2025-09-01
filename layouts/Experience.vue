@@ -8,10 +8,20 @@
       <USeparator class="pb-10 pt-10" />
 
       <ExperienceStep
-        company-name="Self-employed / Freelancer"
+        company-name="Procodies"
         position="Senior Frontend Developer"
-        :timeline="`08.2023 - ${$t('now')}`"
-        :description="$t('self_employed')"
+        :timeline="`08.2025 - ${$t('now')}`"
+        :description="$t('procodies')"
+        :stacks="['vue', 'ts', 'pinia', 'vite', 'gitlab', 'playwright', 'figma']"
+      />
+
+      <USeparator class="pb-10 pt-10" />
+
+      <ExperienceStep
+        company-name="TrueVision"
+        position="Senior Frontend Developer"
+        :timeline="`08.2023 - 07.2025`"
+        :description="$t('truevision')"
         :stacks="[
           'vue',
           'js',
