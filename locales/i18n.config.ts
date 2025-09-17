@@ -34,7 +34,7 @@ export default defineI18nConfig(() => ({
       title: 'Tytuł',
       my_goals: 'Moje plany jako Frontend Developera',
       goals_description:
-        'Jako Frontend Developer chcę rozwijać się w kierunku tworzenia nowoczesnych, wydajnych i skalowalnych aplikacji webowych. Szczególnie interesuje mnie pogłębianie wiedzy z zakresu Vue.js, TypeScript, a także architektury frontendu, wydajności i UX/UI designu.<br><br>Planuję poszerzać swoje umiejętności w obszarze:<br><br><ul><li>Testowania aplikacji (np. Cypress, Vitest, Jest, Playwright),</li><li>Automatyzacji i DevOps (CI/CD, Docker, Vite, Webpack, Azure),</li><li>Współpracy z zespołami produktowymi i projektowymi.</li></ul><br>Chcę mieć realny wpływ na jakość tworzonych produktów oraz aktywnie uczestniczyć w procesie projektowania rozwiązań — od pomysłu po wdrożenie i rozwój.',
+        'Jako Frontend Developer chcę rozwijać się w kierunku tworzenia nowoczesnych, wydajnych i skalowalnych aplikacji webowych. Szczególnie interesuje mnie pogłębianie wiedzy z zakresu Vue, React, TypeScript, a także architektury frontendu, wydajności i UX/UI designu.<br><br>Planuję poszerzać swoje umiejętności w obszarze:<br><br><ul><li>Testowania aplikacji (np. Cypress, Vitest, Jest, Playwright),</li><li>Automatyzacji i DevOps (CI/CD, Docker, Vite, Webpack, Azure),</li><li>Współpracy z zespołami produktowymi i projektowymi.</li></ul><br>Chcę mieć realny wpływ na jakość tworzonych produktów oraz aktywnie uczestniczyć w procesie projektowania rozwiązań — od pomysłu po wdrożenie i rozwój.',
       goals: 'Cele',
       contact: 'Kontakt',
       footer: '© Dariusz Kaczmarek - wszystkie prawa zastrzeżone',
@@ -47,26 +47,26 @@ export default defineI18nConfig(() => ({
         "My main tech stack includes HTML, CSS, JavaScript, TypeScript, and Vue.js. I also have working knowledge of Angular, React, Node.js, and Express. I'm passionate about frontend technologies, UI/UX best practices, and constantly improving both my technical and communication skills to build better digital experiences.",
       experience: 'Experience',
       ffm_online:
-        'Work in an international affiliate marketing company specializing in the creation of advertising campaigns, affiliate links, modern interfaces, and web applications.\n' +
-        '<br><br>\n' +
-        'My key projects included:\n' +
-        '<br><br>\n' +
-        '\n' +
+        'Work in an international affiliate marketing company specializing in the creation of advertising campaigns, affiliate links, modern interfaces, and web applications.' +
+        '<br><br>' +
+        'My key projects included:' +
+        '<br><br>' +
+        '' +
         '<ul> <li>VOD portal and e-book platform (Vue.js)</li> <li>Advanced affiliate campaign management system (Vue.js + REST API)</li> <li>Credit card payment handling script (Vanilla JS)</li> <li>Partner website integrated with an external platform (Nuxt.js)</li> </ul> <br> I optimized application performance (Lighthouse scores of 92–99), developed Vue components, implemented content management systems, and collaborated with backend teams and UX designers. I participated in daily stand-ups and business meetings. On a daily basis, I was responsible for developing new features as well as maintaining and improving existing systems.',
       komputronik:
-        'Work at a company specializing in digital signage and the development of custom web applications for clients.\n' +
-        '<br><br>\n' +
-        'Responsible for:\n' +
-        '<br><br>\n' +
-        '\n' +
+        'Work at a company specializing in digital signage and the development of custom web applications for clients.' +
+        '<br><br>' +
+        'Responsible for:' +
+        '<br><br>' +
+        '' +
         '<ul> <li>Developing frontend applications (Vue.js + TypeScript)</li> <li>Enhancing and maintaining internal systems</li> <li>Improving performance and code quality</li> <li>Fixing bugs in existing applications</li> </ul> <br> I worked on projects for various external clients and participated in the estimation and planning processes. I was part of a Scrum team, using tools such as JIRA. I collaborated closely with the backend team, ensuring efficient API integration and consistency in frontend solutions.',
       now: 'now',
       truevision:
-        'Developing and maintaining web applications and websites using modern technologies such as Vue.js, JavaScript, HTML, Node.js, SQL, Vite, and Webpack. Actively involved in CI/CD processes and server configuration.\n' +
-        '<br><br>\n' +
-        'Responsible for:\n' +
-        '<br><br>\n' +
-        '\n' +
+        'Developing and maintaining web applications and websites using modern technologies such as Vue.js, JavaScript, HTML, Node.js, SQL, Vite, and Webpack. Actively involved in CI/CD processes and server configuration.' +
+        '<br><br>' +
+        'Responsible for:' +
+        '<br><br>' +
+        '' +
         '<ul> <li>Developing web applications (Vue.js + TypeScript)</li> <li>Enhancing and maintaining internal systems</li> <li>Improving performance and code quality</li> <li>Fixing bugs in existing applications</li> <li>Collaborating with the client’s internal team</li> </ul> <br> I implement solutions that improve the functionality and performance of applications from both a user-facing and technical perspective.',
       procodies:
         'Work on an AI chat interface – closely collaborating with UX Design.<br><br>Responsibilities:<br><br><ul><li>Developing new features</li><li>Fixing existing bugs</li><li>Writing application tests</li><li>Integrating with the backend via REST API</li><li>Implementing views based on Figma designs</li></ul><br>Collaboration within an Agile team – task management in Trello and participation in daily stand-up meetings.',
@@ -86,11 +86,11 @@ export default defineI18nConfig(() => ({
       title: 'Title',
       my_goals: 'My Goals as a Frontend Developer',
       goals_description:
-        'As a Frontend Developer, I want to grow in the field of building modern, efficient, and scalable web applications. I’m particularly interested in deepening my knowledge of Vue.js, TypeScript, as well as frontend architecture, performance, and UX/UI design.\n' +
-        '<br><br>\n' +
-        'I plan to expand my skills in the following areas:\n' +
-        '<br><br>\n' +
-        '\n' +
+        'As a Frontend Developer, I want to grow in the direction of building modern, efficient, and scalable web applications. I am particularly interested in deepening my knowledge of Vue, React, TypeScript, as well as frontend architecture, performance, and UX/UI design.' +
+        '<br><br>' +
+        'I plan to expand my skills in the following areas:' +
+        '<br><br>' +
+        '' +
         '<ul> <li>Application testing (e.g. Cypress, Vitest, Jest, Playwright),</li> <li>Automation and DevOps (CI/CD, Docker, Vite, Webpack, Azure),</li> <li>Collaboration with product and design teams.</li> </ul> <br> I want to have a real impact on the quality of the products I help create and actively participate in the entire solution design process — from idea to implementation and further development.',
       goals: 'Goals',
       contact: 'Contact',
