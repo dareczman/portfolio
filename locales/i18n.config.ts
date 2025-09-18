@@ -32,7 +32,7 @@ export default defineI18nConfig(() => ({
       error: 'Błąd',
       error_message: 'Ups! Formularz nie został wysłany. Sprawdź połączenie i spróbuj ponownie.',
       title: 'Tytuł',
-      my_goals: 'Moje plany jako Frontend Developera',
+      my_goals: 'Moje plany jako Frontend Developer',
       goals_description:
         'Jako Frontend Developer chcę rozwijać się w kierunku tworzenia nowoczesnych, wydajnych i skalowalnych aplikacji webowych. Szczególnie interesuje mnie pogłębianie wiedzy z zakresu Vue, React, TypeScript, a także architektury frontendu, wydajności i UX/UI designu.<br><br>Planuję poszerzać swoje umiejętności w obszarze:<br><br><ul><li>Testowania aplikacji (np. Cypress, Vitest, Jest, Playwright),</li><li>Automatyzacji i DevOps (CI/CD, Docker, Vite, Webpack, Azure),</li><li>Współpracy z zespołami produktowymi i projektowymi.</li></ul><br>Chcę mieć realny wpływ na jakość tworzonych produktów oraz aktywnie uczestniczyć w procesie projektowania rozwiązań — od pomysłu po wdrożenie i rozwój.',
       goals: 'Cele',
