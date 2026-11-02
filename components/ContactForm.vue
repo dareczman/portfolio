@@ -74,7 +74,7 @@ import { reactive, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import type { FormError, FormSubmitEvent } from '@nuxt/ui';
 import { validateEmail } from '~/utils/email-validation';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 interface State {
   name: string;

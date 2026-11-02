@@ -45,5 +45,3 @@ defineProps<Props>();
 
 const config = useRuntimeConfig();
 </script>
-
-<style scoped></style>
