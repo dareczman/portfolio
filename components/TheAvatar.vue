@@ -6,6 +6,6 @@
       src="/img/avatar.jpg"
       alt="Profile"
       class="w-full h-full block object-cover object-center"
-    >
+    />
   </div>
 </template>

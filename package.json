@@ -13,21 +13,17 @@
   },
   "dependencies": {
     "@emailjs/browser": "^5.0.3",
-    "@nuxt/eslint": "^1.17.0",
     "@nuxt/icon": "^2.6.2",
     "@nuxt/ui": "^4.12.0",
     "@nuxtjs/i18n": "^10.6.0",
     "@pinia/nuxt": "^1.0.3",
+    "isomorphic-dompurify": "^4.6.0",
     "nuxt": "^4.6.3",
     "vue": "^3.5.14"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.72.1",
-    "@typescript-eslint/parser": "^8.72.1",
+    "@nuxt/eslint": "^1.17.0",
     "eslint": "^10.14.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.7",
-    "eslint-plugin-vue": "^10.12.0",
     "prettier": "^3.9.10",
     "typescript": "^5.9.3"
   }

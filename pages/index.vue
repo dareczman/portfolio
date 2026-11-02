@@ -32,5 +32,3 @@ import { useHeaderStore } from '~/stores/header';
 const headerStore = useHeaderStore();
 const { headerHeightCalculate } = storeToRefs(headerStore);
 </script>
-
-<style scoped></style>

@@ -1,6 +1,7 @@
 export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'pl',
+  warnHtmlMessage: false,
   messages: {
     pl: {
       about_me: 'O mnie',

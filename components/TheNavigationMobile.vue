@@ -13,9 +13,9 @@
         :style="{ top: hamburgerIconHeightCalculate + 'px' }"
       >
         <div class="arrow absolute bottom-full right-2" />
-        <Placeholder class="p-5 inline-flex">
+        <div class="p-5 inline-flex">
           <TheNavigation :is-vertical="true" @on-close="onToggle" />
-        </Placeholder>
+        </div>
       </div>
     </Transition>
   </div>
