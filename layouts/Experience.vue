@@ -8,11 +8,21 @@
       <USeparator class="pb-10 pt-10" />
 
       <ExperienceStep
+        company-name="Programa Software House"
+        position="Senior Frontend Developer"
+        :timeline="`12.2025 - 11.2026`"
+        :description="$t('programa')"
+        :stacks="['svelte', 'vue', 'react', 'ts', 'next', 'vite', 'webpack', 'gitlab', 'docker']"
+      />
+
+      <USeparator class="pb-10 pt-10" />
+
+      <ExperienceStep
         company-name="Procodies"
         position="Senior Frontend Developer"
-        :timeline="`08.2025 - ${$t('now')}`"
+        timeline="07.2025 - 09.2025"
         :description="$t('procodies')"
-        :stacks="['vue', 'ts', 'pinia', 'vite', 'gitlab', 'playwright', 'figma']"
+        :stacks="['vue', 'ts', 'pinia', 'vite', 'gitlab', 'docker', 'playwright', 'figma']"
       />
 
       <USeparator class="pb-10 pt-10" />
@@ -20,7 +30,7 @@
       <ExperienceStep
         company-name="TrueVision"
         position="Senior Frontend Developer"
-        :timeline="`08.2023 - 07.2025`"
+        timeline="08.2023 - 07.2025"
         :description="$t('truevision')"
         :stacks="[
           'vue',
