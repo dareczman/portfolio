@@ -15,7 +15,7 @@
       <p class="text-lg">{{ timeline }}</p>
     </div>
 
-    <p class="mt-5 text-base md:text-xl" v-html="description" />
+    <p class="mt-5 text-base md:text-xl" v-html="sanitizedDescription" />
 
     <div class="stack-section mt-10 flex gap-5 flex-wrap justify-center">
       <template v-for="stack in stacks" :key="stack">
@@ -31,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+import DOMPurify from 'isomorphic-dompurify';
 import TechnologyIcon from './TechnologyIcon.vue';
 
 interface Props {
@@ -38,12 +40,17 @@ interface Props {
   position: string;
   timeline: string;
   description: string;
-  stacks: Array<string>;
+  stacks: string[];
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
 
 const config = useRuntimeConfig();
-</script>
 
-<style scoped></style>
+const sanitizedDescription = computed(() =>
+  DOMPurify.sanitize(props.description, {
+    ALLOWED_TAGS: ['br', 'p', 'ul', 'ol', 'li', 'strong', 'b', 'em', 'i'],
+    ALLOWED_ATTR: [],
+  })
+);
+</script>
