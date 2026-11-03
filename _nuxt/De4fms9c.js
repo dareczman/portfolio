@@ -1,0 +1,1 @@
+import{A as e}from"#entry";import{ht as t,k as n}from"./_wn2tYhS.js";import{c as r}from"./Ckc6kvYh.js";var i=e(`header`,()=>{let e=t(`headerRef`),{height:i}=r(e);return{headerElement:e,headerHeightCalculate:n(()=>i.value+40)}});export{i as t};
