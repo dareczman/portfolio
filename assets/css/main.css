@@ -1,12 +1,8 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
-@theme static {
+@theme {
   --font-sans: 'Montserrat', sans-serif;
-  /*--color-primary: #003e29;*/
-  /*--color-secondary: #9c0000;*/
-  /*--text-color-default: #000;*/
-  /*--text-color-secondary: #fff;*/
 }
 
 :root {
