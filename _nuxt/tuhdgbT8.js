@@ -1,0 +1,1 @@
+import{k as e}from"#entry";import{Mt as t}from"./CCxBMwTp.js";var n=e(`header`,()=>({headerHeightCalculate:t(80)}));export{n as t};
