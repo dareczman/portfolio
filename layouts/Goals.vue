@@ -1,9 +1,9 @@
 <template>
   <div class="goals-section pt-15 pb-15 md:pt-20 md:pb-20">
     <UContainer>
-      <p class="text-2xl md:text-3xl font-bold text-primary">
+      <h2 class="text-2xl md:text-3xl font-bold text-primary">
         {{ $t('my_goals') }}
-      </p>
+      </h2>
 
       <USeparator class="pb-10 pt-10" />
 

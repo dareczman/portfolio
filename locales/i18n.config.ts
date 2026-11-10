@@ -4,6 +4,8 @@ export default defineI18nConfig(() => ({
   warnHtmlMessage: false,
   messages: {
     pl: {
+      close_menu: 'Zamknij menu',
+      open_menu: 'Otwórz menu',
       about_me: 'O mnie',
       about_me_description:
         'Jestem Senior Frontend Developerem z doświadczeniem komercyjnym od kwietnia 2017 roku. Specjalizuję się w tworzeniu i rozwijaniu nowoczesnych aplikacji webowych, przede wszystkim z wykorzystaniem Vue.js, TypeScript i JavaScript.',
@@ -43,6 +45,8 @@ export default defineI18nConfig(() => ({
       footer: '© Dariusz Kaczmarek - wszystkie prawa zastrzeżone',
     },
     en: {
+      close_menu: 'Close menu',
+      open_menu: 'Open menu',
       about_me: 'About me',
       about_me_description:
         "I'm a Senior Frontend Developer with commercial experience since April 2017. I specialize in building and maintaining modern web applications, primarily using Vue.js, TypeScript and JavaScript.",

@@ -4,7 +4,7 @@
       <TheAvatar />
 
       <div class="text-center md:text-left">
-        <p class="text-5xl font-bold">Dariusz Kaczmarek</p>
+        <h1 class="text-5xl font-bold">Dariusz Kaczmarek</h1>
 
         <p class="text-2xl font-light">Frontend developer</p>
       </div>

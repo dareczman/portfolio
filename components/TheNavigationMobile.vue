@@ -1,14 +1,22 @@
 <template>
   <div class="menu-mobile-section relative">
     <div ref="toggleBtn">
-      <UButton color="neutral" variant="subtle" @click="onToggle">
-        <UIcon name="solar-hamburger-menu-linear" class="size-10" />
+      <UButton
+        color="neutral"
+        variant="subtle"
+        :aria-label="isOpen ? t('close_menu') : t('open_menu')"
+        :aria-expanded="isOpen"
+        aria-controls="mobile-navigation"
+        @click="onToggle"
+      >
+        <UIcon name="solar-hamburger-menu-linear" class="size-10" aria-hidden="true" />
       </UButton>
     </div>
 
     <Transition>
       <div
         v-if="isOpen"
+        id="mobile-navigation"
         class="mobile-menu shadow-md border border-gray-200 rounded-sm z-50 absolute right-0 bg-white"
         :style="{ top: hamburgerIconHeightCalculate + 'px' }"
       >
@@ -26,7 +34,9 @@ import { useTemplateRef, computed } from 'vue';
 import { useElementSize } from '@vueuse/core';
 import { storeToRefs } from 'pinia';
 import { useNavigationStore } from '~/stores/navigation';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 const toggleBtnElement = useTemplateRef('toggleBtn');
 const { height } = useElementSize(toggleBtnElement);
 

@@ -13,15 +13,27 @@
 </template>
 
 <script setup lang="ts">
+import { useTemplateRef, watch } from 'vue';
+import { useElementSize } from '@vueuse/core';
 import TheNavigation from '~/components/TheNavigation.vue';
 import CountrySelector from '~/components/CountrySelector.vue';
 import TheNavigationMobile from '~/components/TheNavigationMobile.vue';
-import { storeToRefs } from 'pinia';
 import { useHeaderStore } from '~/stores/header';
 
 const headerStore = useHeaderStore();
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const { headerElement } = storeToRefs(headerStore);
+const headerRef = useTemplateRef<HTMLElement>('headerRef');
+
+const { height } = useElementSize(headerRef, { width: 0, height: 80 }, { box: 'border-box' });
+
+watch(
+  height,
+  (value) => {
+    if (value > 0) {
+      headerStore.headerHeightCalculate = value;
+    }
+  },
+  { immediate: true }
+);
 </script>
 
 <style scoped></style>

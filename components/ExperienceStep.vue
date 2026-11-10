@@ -1,28 +1,46 @@
 <template>
   <div class="experience-step pb-10">
     <div class="flex gap-2 items-center">
-      <img src="/img/office-building.png" alt="office" width="24" />
+      <img
+        :src="`${config.app.baseURL}img/office-building.png`"
+        alt=""
+        width="24"
+        height="24"
+        loading="lazy"
+      />
       <strong class="text-lg">{{ companyName }}</strong>
     </div>
 
     <div class="flex gap-2 items-center">
-      <img src="/img/worker.png" alt="worker" width="24" />
+      <img
+        :src="`${config.app.baseURL}img/worker.png`"
+        alt=""
+        width="24"
+        height="24"
+        loading="lazy"
+      />
       <p class="text-lg">{{ position }}</p>
     </div>
 
     <div class="flex gap-2 items-center">
-      <img src="/img/calendar.png" alt="worker" width="24" />
+      <img
+        :src="`${config.app.baseURL}img/calendar.png`"
+        alt=""
+        width="24"
+        height="24"
+        loading="lazy"
+      />
       <p class="text-lg">{{ timeline }}</p>
     </div>
 
-    <p class="mt-5 text-base md:text-xl" v-html="sanitizedDescription" />
+    <div class="mt-5 text-base md:text-xl" v-html="sanitizedDescription" />
 
     <div class="stack-section mt-10 flex gap-5 flex-wrap justify-center">
       <template v-for="stack in stacks" :key="stack">
         <TechnologyIcon
           class="w-20"
           :alt="stack"
-          :img-src="`${config.app.baseURL}/img/${stack}.png`"
+          :img-src="`${config.app.baseURL}img/${stack}.png`"
           :name="stack"
         />
       </template>
