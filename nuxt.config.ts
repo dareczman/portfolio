@@ -11,6 +11,13 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       titleTemplate: 'Dariusz Kaczmarek - Portfolio',
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/portfolio/favicon.ico',
+        },
+      ],
     },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },

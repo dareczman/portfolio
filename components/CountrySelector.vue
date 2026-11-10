@@ -1,14 +1,17 @@
 <template>
   <div class="flex gap-1">
-    <div
+    <button
       v-for="lang in languages"
       :key="lang.value"
-      class="cursor-pointer"
+      type="button"
+      class="cursor-pointer min-w-10 min-h-10 rounded focus-visible:outline-2 focus-visible:outline-offset-2"
       :class="{ 'font-bold': lang.value === locale }"
+      :aria-pressed="lang.value === locale"
+      :aria-label="lang.value === 'pl' ? 'PL — Polski' : 'EN — English'"
       @click="changeLanguage(lang.value)"
     >
-      {{ lang.value }}
-    </div>
+      {{ lang.value.toUpperCase() }}
+    </button>
   </div>
 </template>
 

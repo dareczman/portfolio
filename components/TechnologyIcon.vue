@@ -2,7 +2,15 @@
   <div
     class="border border-solid border-gray-200 p-1 rounded-lg flex items-center justify-between flex-col gap-1"
   >
-    <img :src="imgSrc" :alt="name" width="50" />
+    <img
+      :src="imgSrc"
+      :alt="name"
+      width="50"
+      height="50"
+      loading="lazy"
+      decoding="async"
+      class="w-[50px] h-[50px] object-contain"
+    />
 
     <p class="name">{{ name }}</p>
   </div>

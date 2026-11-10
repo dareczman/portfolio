@@ -1,12 +1,8 @@
 import { defineStore } from 'pinia';
-import { computed, useTemplateRef } from 'vue';
-import { useElementSize } from '@vueuse/core';
+import { ref } from 'vue';
 
 export const useHeaderStore = defineStore('header', () => {
-  const headerElement = useTemplateRef('headerRef');
-  const { height } = useElementSize(headerElement);
+  const headerHeightCalculate = ref(80);
 
-  const headerHeightCalculate = computed(() => height.value + 40); //40 is a paddings header
-
-  return { headerElement, headerHeightCalculate };
+  return { headerHeightCalculate };
 });

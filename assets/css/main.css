@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
@@ -9,6 +7,14 @@
   /*--color-secondary: #9c0000;*/
   /*--text-color-default: #000;*/
   /*--text-color-secondary: #fff;*/
+}
+
+:root {
+  --ui-primary: #047857;
+}
+
+.dark {
+  --ui-primary: #047857;
 }
 
 html {
